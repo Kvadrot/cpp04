@@ -6,19 +6,15 @@
 /*   By: ufo <ufo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 17:23:10 by ufo               #+#    #+#             */
-/*   Updated: 2025/03/31 17:35:41 by ufo              ###   ########.fr       */
+/*   Updated: 2025/03/31 18:49:58 by ufo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
-
-    // Animal();  
-    // Animal(const Animal &other);
-    // Animal& operator=(const Animal& other);
-    // virtual ~Animal();
-
-Animal:: Animal() {
-    this->_type = "Animal";
+//
+//Constructors
+//
+Animal:: Animal(): _type("Animal") {
     std::cout << "Animal DefaultInit is called";
 }
 
@@ -37,6 +33,17 @@ Animal& Animal:: operator=(const Animal& other) {
 
 Animal:: ~Animal() {
      std::cout << "Destructor called for Animal" << std::endl;
+}
+
+//
+//Methods
+//
+void Animal:: makeSound() {
+    std::cout << "aaaaaaanimal\n";
+}
+
+std::string Animal:: getType() {
+    return (this->_type);
 }
 
 
