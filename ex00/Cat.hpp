@@ -6,7 +6,7 @@
 /*   By: ufo <ufo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 17:43:04 by ufo               #+#    #+#             */
-/*   Updated: 2025/03/31 18:03:48 by ufo              ###   ########.fr       */
+/*   Updated: 2025/03/31 19:00:24 by ufo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Cat: public Animal {
         ~Cat();
         
     // Member functions
-        void makeSound();
+        void makeSound() const;
 };
 
 #endif

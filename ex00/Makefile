@@ -3,10 +3,12 @@ C++_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp\
 	  Animal.cpp\
+	  Dog.cpp \
+	  Cat.cpp \
 
 OBJFILES = $(SRC:.cpp=.o)
 
-NAME = clapTrap
+NAME = animals
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: ufo <ufo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 16:26:00 by ufo               #+#    #+#             */
-/*   Updated: 2025/03/31 18:49:46 by ufo              ###   ########.fr       */
+/*   Updated: 2025/03/31 19:02:22 by ufo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ public:
     virtual ~Animal();
 
     // Member functions
-    virtual void makeSound();
-    std::string getType();
+    virtual void makeSound() const;
+    std::string getType() const;
 };
 
 #endif
