@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ufo <ufo@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: itykhono <itykhono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 18:00:55 by ufo               #+#    #+#             */
-/*   Updated: 2025/03/31 19:03:58 by ufo              ###   ########.fr       */
+/*   Updated: 2025/04/02 13:20:08 by itykhono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,13 @@ Cat:: Cat(): Animal() {
     std::cout << "CAT DefaultInit is called\n";
 }
 
-Cat:: Cat(const Cat &other): Animal() {
-    *this = other;
+Cat:: Cat(const Cat &other): Animal(other) {
     std::cout << "CAT CopyInit is called\n";
 }
 
 Cat& Cat:: operator= (const Cat &other) {
     if (this != &other) {
-        this->_type = other._type;
+        Animal::operator=(other);
     }
     std::cout << "CAT CopyAssignmentInit is called\n";
     return (*this);
