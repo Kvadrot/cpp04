@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ufo <ufo@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: itykhono <itykhono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 18:09:06 by ufo               #+#    #+#             */
-/*   Updated: 2025/04/01 16:09:15 by ufo              ###   ########.fr       */
+/*   Updated: 2025/04/02 12:36:21 by itykhono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ class Dog: public Animal {
         
     // Member functions
         void makeSound() const;
+		std::string getIdea(const int ind);
+		void setIdea(const int ind, const std::string idea);
 };
 
 #endif
