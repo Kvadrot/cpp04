@@ -6,7 +6,7 @@
 /*   By: itykhono <itykhono@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 18:09:03 by ufo               #+#    #+#             */
-/*   Updated: 2025/04/02 13:11:47 by itykhono         ###   ########.fr       */
+/*   Updated: 2025/04/02 13:25:17 by itykhono         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ Dog:: ~Dog() {
 //Mehtods
 //
 void Dog:: makeSound() const{
-     std::cout << "MEEEEEEOOOW...\n" << std::endl;
+     std::cout << "BRAK...\n" << std::endl;
 }
 
 std::string Dog:: getIdea(const int ind) {
